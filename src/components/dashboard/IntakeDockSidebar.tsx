@@ -116,6 +116,14 @@ export function IntakeDockSidebar({
         </nav>
 
         <div className="p-3 border-t border-white/10 space-y-2.5">
+          <a
+            href="https://wa.me/2389172385"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block px-3 py-1.5 rounded-lg bg-[#261C54] text-[11px] font-semibold text-[#C4B5FD] hover:text-white transition"
+          >
+            WhatsApp Support →
+          </a>
           <div className="px-3 py-2 rounded-xl bg-white/5 border border-white/10">
             <p className="text-xs font-semibold text-white truncate">{tenantName}</p>
             <p className="mt-0.5 inline-flex items-center gap-1 text-[11px] text-white/70">
