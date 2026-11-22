@@ -54,8 +54,8 @@ export default function OnboardingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] flex items-center justify-center p-4">
-      <div className="w-full max-w-lg bg-white border border-slate-200 rounded-2xl p-8 space-y-6 shadow-sm">
+    <div className="min-h-screen bg-[#F8F7FC] flex items-center justify-center p-4">
+      <div className="w-full max-w-lg bg-white border border-[#EAE6F5] rounded-2xl p-8 space-y-6 shadow-sm">
         <div className="space-y-2">
           <IntakeDockLogo />
           <h1 className="text-2xl font-bold text-slate-950 pt-2">Set up your firm workspace</h1>
@@ -73,7 +73,7 @@ export default function OnboardingPage() {
               placeholder="Acme Accounting LLP"
               value={name}
               onChange={(e) => handleNameChange(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm focus:outline-none focus:border-slate-900"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm focus:outline-none focus:border-slate-900"
             />
           </div>
 
@@ -85,7 +85,7 @@ export default function OnboardingPage() {
               placeholder="acme-accounting"
               value={slug}
               onChange={(e) => setSlug(e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, ''))}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm font-mono focus:outline-none focus:border-slate-900"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm font-mono focus:outline-none focus:border-slate-900"
             />
           </div>
 
@@ -97,7 +97,7 @@ export default function OnboardingPage() {
               placeholder="onboarding@acmeaccounting.com"
               value={contactEmail}
               onChange={(e) => setContactEmail(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm focus:outline-none focus:border-slate-900"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm focus:outline-none focus:border-slate-900"
             />
           </div>
 
@@ -112,7 +112,7 @@ export default function OnboardingPage() {
                   className={`py-2.5 rounded-xl border text-sm font-semibold transition-colors ${
                     currency === cur
                       ? 'border-slate-950 bg-slate-950 text-white'
-                      : 'border-slate-200 bg-white text-slate-700 hover:bg-slate-50'
+                      : 'border-[#EAE6F5] bg-white text-slate-700 hover:bg-slate-50'
                   }`}
                 >
                   {cur === 'USD' ? 'USD ($)' : 'EUR (€)'}

@@ -17,7 +17,7 @@ export default async function AdminLayout({
   }
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-950">
+    <div className="min-h-screen bg-[#F8F7FC] text-slate-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">{children}</div>
     </div>
   );

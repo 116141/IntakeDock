@@ -33,8 +33,8 @@ export default async function ClientPortalPage(context: {
 
   if (isExpiredOrRevoked || !tenant || !isTenantSubscriptionActive(tenant)) {
     return (
-      <div className="min-h-screen bg-[#F8FAFC] flex items-center justify-center p-4">
-        <div className="max-w-md w-full bg-white border border-slate-200 rounded-2xl p-8 text-center space-y-3">
+      <div className="min-h-screen bg-[#F8F7FC] flex items-center justify-center p-4">
+        <div className="max-w-md w-full bg-white border border-[#EAE6F5] rounded-2xl p-8 text-center space-y-3">
           <Lock className="w-8 h-8 text-slate-400 mx-auto" />
           <h1 className="text-lg font-bold text-slate-950">Portal Link Unavailable</h1>
           <p className="text-sm text-slate-500">
@@ -61,8 +61,8 @@ export default async function ClientPortalPage(context: {
   const feedbackByItem = new Map((subs ?? []).map((s) => [s.request_item_id, s.ai_client_feedback]));
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-950 flex flex-col">
-      <header className="bg-white border-b border-slate-200">
+    <div className="min-h-screen bg-[#F8F7FC] text-slate-950 flex flex-col">
+      <header className="bg-white border-b border-[#EAE6F5]">
         <div className="max-w-2xl mx-auto px-4 h-16 flex items-center justify-between">
           <IntakeDockLogo size={24} />
           <span className="inline-flex items-center gap-1.5 text-xs font-medium text-emerald-700">
@@ -73,7 +73,7 @@ export default async function ClientPortalPage(context: {
       </header>
 
       <main className="flex-1 max-w-2xl w-full mx-auto px-4 py-8 space-y-6">
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-1.5">
+        <div className="bg-white border border-[#EAE6F5] rounded-2xl p-6 space-y-1.5">
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
             Requested by {tenant.name}
           </p>

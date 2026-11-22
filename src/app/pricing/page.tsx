@@ -4,8 +4,8 @@ import { IntakeDockLogo } from '@/components/brand/IntakeDockLogo';
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-950 flex flex-col">
-      <header className="bg-white border-b border-slate-200">
+    <div className="min-h-screen bg-[#F8F7FC] text-slate-950 flex flex-col">
+      <header className="bg-white border-b border-[#EAE6F5]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link href="/">
             <IntakeDockLogo />
@@ -30,7 +30,7 @@ export default function PricingPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div className="rounded-2xl bg-white border border-slate-200 p-8 flex flex-col justify-between space-y-6">
+          <div className="rounded-2xl bg-white border border-[#EAE6F5] p-8 flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div>
                 <h2 className="text-xl font-bold">Starter</h2>
@@ -42,27 +42,27 @@ export default function PricingPage() {
                 <p className="text-3xl font-extrabold">
                   $29 USD <span className="text-base font-medium text-slate-500">/ month</span>
                 </p>
-                <p className="text-sm font-semibold text-teal-700">or 25 € EUR / month</p>
+                <p className="text-sm font-semibold text-[#5B38E8]">or 25 € EUR / month</p>
               </div>
-              <ul className="space-y-2.5 text-sm text-slate-700 pt-3 border-t border-slate-200">
+              <ul className="space-y-2.5 text-sm text-slate-700 pt-3 border-t border-[#EAE6F5]">
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   14-day free trial included
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   Up to 5 team members included
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   Up to 50 active client portals
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   AI document legibility &amp; expiry pre-check
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   1-click ZIP &amp; PDF dossier export
                 </li>
               </ul>
@@ -90,27 +90,27 @@ export default function PricingPage() {
                 <p className="text-3xl font-extrabold">
                   $59 USD <span className="text-base font-medium text-slate-500">/ month</span>
                 </p>
-                <p className="text-sm font-semibold text-teal-700">or 55 € EUR / month</p>
+                <p className="text-sm font-semibold text-[#5B38E8]">or 55 € EUR / month</p>
               </div>
-              <ul className="space-y-2.5 text-sm text-slate-700 pt-3 border-t border-slate-200">
+              <ul className="space-y-2.5 text-sm text-slate-700 pt-3 border-t border-[#EAE6F5]">
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   14-day free trial included
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   Up to 15 team members included
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   Unlimited active client portals
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   50 GB private encrypted vault storage
                 </li>
                 <li className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-teal-600 shrink-0" />
+                  <Check className="w-4 h-4 text-[#6D4AFF] shrink-0" />
                   Configurable auto-purge &amp; full audit logs
                 </li>
               </ul>

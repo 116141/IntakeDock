@@ -14,7 +14,7 @@ export default async function SuperAdminPage() {
 
   return (
     <div className="space-y-8">
-      <div className="flex items-center justify-between border-b border-slate-200 pb-6">
+      <div className="flex items-center justify-between border-b border-[#EAE6F5] pb-6">
         <div className="space-y-1">
           <IntakeDockLogo />
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 pt-1">
@@ -24,22 +24,22 @@ export default async function SuperAdminPage() {
       </div>
 
       <div className="grid sm:grid-cols-3 gap-4">
-        <div className="bg-white border border-slate-200 rounded-xl p-5">
+        <div className="bg-white border border-[#EAE6F5] rounded-xl p-5">
           <p className="text-xs font-semibold text-slate-500">Total Workspaces</p>
           <p className="text-3xl font-extrabold text-slate-950 mt-1">{all.length}</p>
         </div>
-        <div className="bg-white border border-slate-200 rounded-xl p-5">
+        <div className="bg-white border border-[#EAE6F5] rounded-xl p-5">
           <p className="text-xs font-semibold text-slate-500">Active Paid</p>
           <p className="text-3xl font-extrabold text-emerald-700 mt-1">{activeCount}</p>
         </div>
-        <div className="bg-white border border-slate-200 rounded-xl p-5">
+        <div className="bg-white border border-[#EAE6F5] rounded-xl p-5">
           <p className="text-xs font-semibold text-slate-500">Active Trials</p>
           <p className="text-3xl font-extrabold text-slate-950 mt-1">{trialCount}</p>
         </div>
       </div>
 
-      <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden">
-        <div className="px-6 py-4 border-b border-slate-200">
+      <div className="bg-white border border-[#EAE6F5] rounded-2xl overflow-hidden">
+        <div className="px-6 py-4 border-b border-[#EAE6F5]">
           <h2 className="font-bold text-slate-950">Registered Workspaces</h2>
         </div>
         <div className="divide-y divide-slate-200">

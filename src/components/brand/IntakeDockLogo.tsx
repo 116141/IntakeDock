@@ -11,7 +11,7 @@ export function IntakeDockLogo({ size = 28 }: { size?: number }) {
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        <rect width="32" height="32" rx="8" fill="#0F172A" />
+        <rect width="32" height="32" rx="8" fill="#1B1340" />
         <path
           d="M9 10.5C9 9.67 9.67 9 10.5 9H17.5L23 14.5V21.5C23 22.33 22.33 23 21.5 23H10.5C9.67 23 9 22.33 9 21.5V10.5Z"
           stroke="#FFFFFF"

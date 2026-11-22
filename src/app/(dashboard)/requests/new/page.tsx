@@ -91,7 +91,7 @@ export default function NewRequestPage() {
     );
 
     return (
-      <div className="max-w-2xl mx-auto bg-white border border-slate-200 rounded-2xl p-8 space-y-6">
+      <div className="max-w-2xl mx-auto bg-white border border-[#EAE6F5] rounded-2xl p-8 space-y-6">
         <div className="space-y-2">
           <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
             Portal Link Ready
@@ -103,7 +103,7 @@ export default function NewRequestPage() {
           </p>
         </div>
 
-        <div className="p-4 rounded-xl bg-[#F8FAFC] border border-slate-200 flex items-center justify-between gap-3">
+        <div className="p-4 rounded-xl bg-[#F8F7FC] border border-[#EAE6F5] flex items-center justify-between gap-3">
           <code className="text-xs font-mono text-slate-800 break-all">{createdPortal.portalUrl}</code>
           <button
             type="button"
@@ -124,7 +124,7 @@ export default function NewRequestPage() {
             href={`https://wa.me/${clientPhoneE164.replace(/\D/g, '')}?text=${waText}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm font-semibold text-slate-900 hover:bg-slate-50"
+            className="px-4 py-2.5 rounded-xl border border-[#EAE6F5] bg-white text-sm font-semibold text-slate-900 hover:bg-slate-50"
           >
             Send via WhatsApp
           </a>
@@ -149,7 +149,7 @@ export default function NewRequestPage() {
         </p>
       </div>
 
-      <form onSubmit={handleSubmit} className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 space-y-6">
+      <form onSubmit={handleSubmit} className="bg-white border border-[#EAE6F5] rounded-2xl p-6 sm:p-8 space-y-6">
         <div className="space-y-2">
           <label className="text-xs font-semibold text-slate-700">Industry Template</label>
           <div className="grid sm:grid-cols-2 gap-2.5">
@@ -161,7 +161,7 @@ export default function NewRequestPage() {
                 className={`p-3 rounded-xl border text-left transition-colors ${
                   selectedPreset === preset.id
                     ? 'border-slate-950 bg-slate-50'
-                    : 'border-slate-200 hover:bg-slate-50'
+                    : 'border-[#EAE6F5] hover:bg-slate-50'
                 }`}
               >
                 <p className="text-sm font-semibold text-slate-950">{preset.label}</p>
@@ -179,7 +179,7 @@ export default function NewRequestPage() {
               required
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm"
             />
           </div>
 
@@ -191,7 +191,7 @@ export default function NewRequestPage() {
               placeholder="Maria Silva"
               value={clientName}
               onChange={(e) => setClientName(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm"
             />
           </div>
 
@@ -203,7 +203,7 @@ export default function NewRequestPage() {
               placeholder="maria@example.com"
               value={clientEmail}
               onChange={(e) => setClientEmail(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm"
             />
           </div>
 
@@ -216,7 +216,7 @@ export default function NewRequestPage() {
               placeholder="+14155552671"
               value={clientPhoneE164}
               onChange={(e) => setClientPhoneE164(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm"
             />
           </div>
         </div>
@@ -236,7 +236,7 @@ export default function NewRequestPage() {
 
           <div className="space-y-3">
             {items.map((item, idx) => (
-              <div key={idx} className="p-3.5 rounded-xl border border-slate-200 bg-[#F8FAFC] space-y-2">
+              <div key={idx} className="p-3.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] space-y-2">
                 <div className="flex items-center gap-2">
                   <input
                     type="text"
@@ -248,7 +248,7 @@ export default function NewRequestPage() {
                       next[idx] = { ...item, title: e.target.value };
                       setItems(next);
                     }}
-                    className="flex-1 px-3 py-2 rounded-lg border border-slate-200 bg-white text-sm font-medium"
+                    className="flex-1 px-3 py-2 rounded-lg border border-[#EAE6F5] bg-white text-sm font-medium"
                   />
                   {items.length > 1 && (
                     <button
@@ -269,7 +269,7 @@ export default function NewRequestPage() {
                     next[idx] = { ...item, instructionsForClient: e.target.value };
                     setItems(next);
                   }}
-                  className="w-full px-3 py-1.5 rounded-lg border border-slate-200 bg-white text-xs text-slate-600"
+                  className="w-full px-3 py-1.5 rounded-lg border border-[#EAE6F5] bg-white text-xs text-slate-600"
                 />
               </div>
             ))}

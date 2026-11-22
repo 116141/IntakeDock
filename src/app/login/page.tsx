@@ -89,8 +89,8 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] flex flex-col items-center justify-center p-4">
-      <div className="w-full max-w-md bg-white border border-slate-200 rounded-2xl p-8 space-y-6 shadow-sm">
+    <div className="min-h-screen bg-[#F8F7FC] flex flex-col items-center justify-center p-4">
+      <div className="w-full max-w-md bg-white border border-[#EAE6F5] rounded-2xl p-8 space-y-6 shadow-sm">
         <div className="text-center space-y-2">
           <Link href="/" className="inline-block">
             <IntakeDockLogo />
@@ -119,14 +119,14 @@ export default function LoginPage() {
         </button>
 
         <div className="relative flex items-center">
-          <div className="flex-grow border-t border-slate-200" />
+          <div className="flex-grow border-t border-[#EAE6F5]" />
           <span className="flex-shrink mx-3 text-xs text-slate-400 font-medium">
             or with work email
           </span>
-          <div className="flex-grow border-t border-slate-200" />
+          <div className="flex-grow border-t border-[#EAE6F5]" />
         </div>
 
-        <div className="grid grid-cols-2 p-1 rounded-xl bg-slate-100 border border-slate-200 text-xs font-semibold">
+        <div className="grid grid-cols-2 p-1 rounded-xl bg-slate-100 border border-[#EAE6F5] text-xs font-semibold">
           <button
             type="button"
             onClick={() => {
@@ -164,7 +164,7 @@ export default function LoginPage() {
               placeholder="you@company.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm focus:outline-none focus:border-slate-900"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm focus:outline-none focus:border-slate-900"
             />
           </div>
 
@@ -177,7 +177,7 @@ export default function LoginPage() {
               placeholder="Minimum 8 characters"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 bg-[#F8FAFC] text-sm focus:outline-none focus:border-slate-900"
+              className="w-full px-3.5 py-2.5 rounded-xl border border-[#EAE6F5] bg-[#F8F7FC] text-sm focus:outline-none focus:border-slate-900"
             />
           </div>
 

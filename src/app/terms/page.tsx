@@ -4,7 +4,7 @@ import { IntakeDockLogo } from '@/components/brand/IntakeDockLogo';
 export default function TermsPage() {
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      <header className="border-b border-slate-200">
+      <header className="border-b border-[#EAE6F5]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
           <Link href="/">
             <IntakeDockLogo />

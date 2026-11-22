@@ -48,7 +48,7 @@ export default async function OverviewPage() {
       </div>
 
       {!requests || requests.length === 0 ? (
-        <div className="bg-white border border-slate-200 rounded-2xl p-12 text-center space-y-4">
+        <div className="bg-white border border-[#EAE6F5] rounded-2xl p-12 text-center space-y-4">
           <div className="w-11 h-11 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center mx-auto">
             <FileText className="w-5 h-5" />
           </div>
@@ -68,7 +68,7 @@ export default async function OverviewPage() {
           </Link>
         </div>
       ) : (
-        <div className="bg-white border border-slate-200 rounded-2xl overflow-hidden divide-y divide-slate-200">
+        <div className="bg-white border border-[#EAE6F5] rounded-2xl overflow-hidden divide-y divide-slate-200">
           {requests.map((req) => {
             const items = req.id_request_items ?? [];
             const doneCount = items.filter(
@@ -79,7 +79,7 @@ export default async function OverviewPage() {
               <Link
                 key={req.id}
                 href={`/requests/${req.id}`}
-                className="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#F8FAFC] transition-colors"
+                className="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 hover:bg-[#F8F7FC] transition-colors"
               >
                 <div className="space-y-1">
                   <p className="font-bold text-slate-950">{req.title}</p>

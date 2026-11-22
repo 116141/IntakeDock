@@ -14,7 +14,7 @@ import { IntakeDockLogo } from '@/components/brand/IntakeDockLogo';
 export default function HomePage() {
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-950">
-      <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-slate-200">
+      <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-[#EAE6F5]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
           <Link href="/">
             <IntakeDockLogo />
@@ -41,7 +41,7 @@ export default function HomePage() {
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-semibold">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFEAFF] border border-[#DDD3FF] text-teal-800 text-xs font-semibold">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 Self-Serve B2B Client Onboarding &amp; Document Workflow Software
               </div>
@@ -66,7 +66,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/pricing"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-slate-200 bg-white text-slate-900 text-sm font-semibold hover:bg-slate-50 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-[#EAE6F5] bg-white text-slate-900 text-sm font-semibold hover:bg-slate-50 transition-colors"
                 >
                   View USD &amp; EUR pricing
                 </Link>
@@ -74,15 +74,15 @@ export default function HomePage() {
 
               <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-slate-500 pt-1">
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-teal-600" />
+                  <Check className="w-3.5 h-3.5 text-[#6D4AFF]" />
                   No client password required
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-teal-600" />
+                  <Check className="w-3.5 h-3.5 text-[#6D4AFF]" />
                   Flat-rate pricing (no per-seat tax)
                 </span>
                 <span className="flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5 text-teal-600" />
+                  <Check className="w-3.5 h-3.5 text-[#6D4AFF]" />
                   14-day free trial
                 </span>
               </div>
@@ -90,8 +90,8 @@ export default function HomePage() {
 
             {/* Clean Portal Preview Card */}
             <div className="lg:col-span-5">
-              <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-6 space-y-4">
-                <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+              <div className="rounded-2xl border border-[#EAE6F5] bg-[#F8F7FC] p-6 space-y-4">
+                <div className="flex items-center justify-between border-b border-[#EAE6F5] pb-3">
                   <div>
                     <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider">
                       Client Portal Preview
@@ -104,7 +104,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-2.5">
-                  <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between">
+                  <div className="p-3.5 rounded-xl bg-white border border-[#EAE6F5] flex items-center justify-between">
                     <div>
                       <p className="text-sm font-semibold text-slate-900">1. Government Photo ID</p>
                       <p className="text-xs text-emerald-700">Legible &amp; unexpired &middot; Stored in vault</p>
@@ -124,7 +124,7 @@ export default function HomePage() {
                     </span>
                   </div>
 
-                  <div className="p-3.5 rounded-xl bg-white border border-slate-200 flex items-center justify-between">
+                  <div className="p-3.5 rounded-xl bg-white border border-[#EAE6F5] flex items-center justify-between">
                     <div>
                       <p className="text-sm font-semibold text-slate-900">3. Signed Engagement Letter</p>
                       <p className="text-xs text-slate-500">PDF, JPEG, PNG or WebP up to 15 MB</p>
@@ -140,10 +140,10 @@ export default function HomePage() {
         </section>
 
         {/* Workflow Features */}
-        <section className="border-t border-slate-200 bg-[#F8FAFC] py-16">
+        <section className="border-t border-[#EAE6F5] bg-[#F8F7FC] py-16">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="max-w-2xl mb-10 space-y-2">
-              <p className="text-xs font-bold uppercase tracking-wider text-teal-700">
+              <p className="text-xs font-bold uppercase tracking-wider text-[#5B38E8]">
                 Built for Accounting, Legal, Real Estate &amp; HR
               </p>
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-950 tracking-tight">
@@ -152,7 +152,7 @@ export default function HomePage() {
             </div>
 
             <div className="grid md:grid-cols-4 gap-6">
-              <div className="p-6 rounded-xl bg-white border border-slate-200 space-y-3">
+              <div className="p-6 rounded-xl bg-white border border-[#EAE6F5] space-y-3">
                 <Link2 className="w-5 h-5 text-slate-900" />
                 <h3 className="font-bold text-slate-950">No-Login Magic Links</h3>
                 <p className="text-sm text-slate-600">
@@ -160,7 +160,7 @@ export default function HomePage() {
                   creating an account.
                 </p>
               </div>
-              <div className="p-6 rounded-xl bg-white border border-slate-200 space-y-3">
+              <div className="p-6 rounded-xl bg-white border border-[#EAE6F5] space-y-3">
                 <FileCheck2 className="w-5 h-5 text-slate-900" />
                 <h3 className="font-bold text-slate-950">AI Quality Pre-Check</h3>
                 <p className="text-sm text-slate-600">
@@ -168,7 +168,7 @@ export default function HomePage() {
                   on upload.
                 </p>
               </div>
-              <div className="p-6 rounded-xl bg-white border border-slate-200 space-y-3">
+              <div className="p-6 rounded-xl bg-white border border-[#EAE6F5] space-y-3">
                 <Lock className="w-5 h-5 text-slate-900" />
                 <h3 className="font-bold text-slate-950">Write-Only Private Vault</h3>
                 <p className="text-sm text-slate-600">
@@ -176,7 +176,7 @@ export default function HomePage() {
                   60-second signed URLs.
                 </p>
               </div>
-              <div className="p-6 rounded-xl bg-white border border-slate-200 space-y-3">
+              <div className="p-6 rounded-xl bg-white border border-[#EAE6F5] space-y-3">
                 <FolderArchive className="w-5 h-5 text-slate-900" />
                 <h3 className="font-bold text-slate-950">1-Click ZIP &amp; PDF Pack</h3>
                 <p className="text-sm text-slate-600">
@@ -188,7 +188,7 @@ export default function HomePage() {
         </section>
       </main>
 
-      <footer className="border-t border-slate-200 bg-white py-8">
+      <footer className="border-t border-[#EAE6F5] bg-white py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div className="flex items-center gap-4">
             <span>&copy; {new Date().getFullYear()} GilByte Solutions &middot; IntakeDock</span>

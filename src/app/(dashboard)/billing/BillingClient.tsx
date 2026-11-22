@@ -69,7 +69,7 @@ export function BillingClient({
     <div className="space-y-6">
       <Script src="https://cdn.paddle.com/paddle/v2/paddle.js" strategy="afterInteractive" />
 
-      <div className="bg-white border border-slate-200 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      <div className="bg-white border border-[#EAE6F5] rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">
             Current Status
@@ -82,7 +82,7 @@ export function BillingClient({
           </p>
         </div>
 
-        <div className="inline-flex p-1 rounded-lg bg-slate-100 border border-slate-200 self-start">
+        <div className="inline-flex p-1 rounded-lg bg-slate-100 border border-[#EAE6F5] self-start">
           {(['USD', 'EUR'] as const).map((cur) => (
             <button
               key={cur}
@@ -99,7 +99,7 @@ export function BillingClient({
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
-        <div className="bg-white border border-slate-200 rounded-2xl p-6 space-y-4">
+        <div className="bg-white border border-[#EAE6F5] rounded-2xl p-6 space-y-4">
           <div>
             <h2 className="text-lg font-bold text-slate-950">Starter</h2>
             <p className="text-2xl font-extrabold mt-1">

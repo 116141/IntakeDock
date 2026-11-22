@@ -107,7 +107,7 @@ export function RequestDetailClient({
           type="button"
           onClick={() => handleExport('pdf')}
           disabled={exporting !== null}
-          className="px-4 py-2 rounded-xl border border-slate-200 bg-white text-slate-900 text-xs font-semibold hover:bg-slate-50 inline-flex items-center gap-2 disabled:opacity-50"
+          className="px-4 py-2 rounded-xl border border-[#EAE6F5] bg-white text-slate-900 text-xs font-semibold hover:bg-slate-50 inline-flex items-center gap-2 disabled:opacity-50"
         >
           <Download className="w-4 h-4" />
           {exporting === 'pdf' ? 'Merging PDF...' : 'Export Merged PDF'}
@@ -120,7 +120,7 @@ export function RequestDetailClient({
         </div>
       )}
 
-      <div className="bg-white border border-slate-200 rounded-2xl divide-y divide-slate-200">
+      <div className="bg-white border border-[#EAE6F5] rounded-2xl divide-y divide-slate-200">
         {items.map((item) => (
           <div key={item.id} className="p-5 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div className="space-y-1">
@@ -152,7 +152,7 @@ export function RequestDetailClient({
                   type="button"
                   onClick={() => handleView(item.submission!.id)}
                   disabled={busyId === item.submission.id}
-                  className="px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 inline-flex items-center gap-1.5"
+                  className="px-3 py-1.5 rounded-lg border border-[#EAE6F5] text-xs font-semibold text-slate-700 hover:bg-slate-50 inline-flex items-center gap-1.5"
                 >
                   <Eye className="w-3.5 h-3.5" />
                   View (60s URL)
