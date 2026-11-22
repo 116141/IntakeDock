@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,16 +7,26 @@
 :root {
   color-scheme: light;
   --gb-accent: #6d4aff;
-  --gb-accent-hover: #5b38e8;
+  --gb-accent-hover: #4a2dc5;
   --gb-dark: #1b1340;
-  --gb-surface: #f8f7fc;
+  --gb-heading: #372580;
+  --gb-surface: #f7f5ff;
   --gb-border: #eae6f5;
 }
 
 body {
-  background-color: #f8f7fc;
+  background-color: #f7f5ff;
   color: #0c0c14;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   -webkit-font-smoothing: antialiased;
+}
+
+.font-proton-serif {
+  font-family: 'Newsreader', Georgia, Cambria, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+.proton-auth-bg {
+  background: linear-gradient(68.66deg, #e8e2ff 1.3%, #f7f5ff 50%);
 }

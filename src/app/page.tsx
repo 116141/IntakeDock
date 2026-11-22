@@ -47,7 +47,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="/login"
-              className="px-4 py-2 rounded-xl bg-[#6D4AFF] text-white text-xs sm:text-sm font-semibold hover:bg-[#5B38E8] transition-colors shadow-sm"
+              className="px-4 py-2 rounded-full bg-[#6D4AFF] text-white text-xs sm:text-sm font-semibold hover:bg-[#4A2DC5] transition-colors shadow-sm"
             >
               Start 14-day trial
             </Link>
@@ -60,12 +60,12 @@ export default function HomePage() {
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFEAFF] border border-[#DDD3FF] text-[#5B38E8] text-xs font-semibold">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E2DBFF] border border-[#DDD3FF] text-[#5B38E8] text-xs font-semibold">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 Self-Serve B2B Client Onboarding &amp; Document Workflow Software
               </div>
 
-              <h1 className="text-4xl sm:text-5xl font-bold tracking-[-0.025em] text-[#1B1340] leading-[1.1]">
+              <h1 className="font-proton-serif text-4xl sm:text-5xl md:text-[54px] text-[#372580] leading-[1.08]">
                 Stop chasing client documents across WhatsApp and email threads.
               </h1>
 
@@ -78,14 +78,14 @@ export default function HomePage() {
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <Link
                   href="/login"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#6D4AFF] text-white text-sm font-semibold hover:bg-[#5B38E8] transition-colors shadow-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#6D4AFF] text-white text-base font-semibold hover:bg-[#4A2DC5] transition-colors shadow-sm"
                 >
                   Start 14-day free trial
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/pricing"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-[#EAE6F5] bg-white text-[#1B1340] text-sm font-semibold hover:bg-white/80 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-transparent text-[#6D4AFF] text-base font-semibold shadow-[inset_0_0_0_2px_#6D4AFF] hover:bg-[#4A2DC5] hover:text-white transition-colors"
                 >
                   View USD &amp; EUR pricing
                 </Link>

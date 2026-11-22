@@ -89,14 +89,14 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8F7FC] flex flex-col items-center justify-center p-4">
-      <div className="w-full max-w-md bg-white border border-[#EAE6F5] rounded-2xl p-8 space-y-6 shadow-sm">
+    <div className="min-h-screen proton-auth-bg flex flex-col items-center justify-center p-4">
+      <div className="w-full max-w-[480px] bg-white border border-[#EAE6F5] rounded-[24px] p-6 sm:p-11 space-y-6 shadow-[0_8px_24px_rgba(109,74,255,0.16)]">
         <div className="text-center space-y-2">
           <Link href="/" className="inline-block">
             <IntakeDockLogo />
           </Link>
-          <h1 className="text-xl font-bold text-slate-950 pt-2">
-            {mode === 'signin' ? 'Sign in to your workspace' : 'Create your firm account'}
+          <h1 className="text-[28px] font-normal text-[#0C0C14] pt-2 leading-tight">
+            {mode === 'signin' ? 'Sign in' : 'Create your firm account'}
           </h1>
           <p className="text-sm text-slate-500">
             Start your 14-day free trial or access your firm dashboard.
