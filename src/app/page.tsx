@@ -13,22 +13,41 @@ import { IntakeDockLogo } from '@/components/brand/IntakeDockLogo';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-950">
+    <div className="min-h-screen flex flex-col bg-[#F8F7FC] text-[#1B1340]">
+      <div className="bg-[#1B1340] text-white text-xs py-2 px-4 border-b border-white/10">
+        <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-center sm:justify-between gap-2">
+          <span className="inline-flex items-center gap-2 text-white/90 font-medium">
+            <span className="px-2 py-0.5 rounded-full bg-[#6D4AFF] text-[10px] font-bold uppercase tracking-wide text-white">
+              GilByte Suite
+            </span>
+            <span>Private by design • Passwordless encrypted client portals</span>
+          </span>
+          <a
+            href="https://gilbyte-landing-page.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#C4B5FD] hover:text-white font-semibold transition"
+          >
+            Explore all 3 apps →
+          </a>
+        </div>
+      </div>
+
       <header className="sticky top-0 z-30 bg-white/95 backdrop-blur border-b border-[#EAE6F5]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
           <Link href="/">
             <IntakeDockLogo />
           </Link>
-          <nav className="flex items-center gap-4 sm:gap-6 text-sm font-medium text-slate-600">
-            <Link href="/pricing" className="hover:text-slate-950 transition-colors">
+          <nav className="flex items-center gap-4 sm:gap-6 text-sm font-medium text-[#4A4660]">
+            <Link href="/pricing" className="hover:text-[#1B1340] transition-colors">
               Pricing
             </Link>
-            <Link href="/login" className="hover:text-slate-950 transition-colors">
+            <Link href="/login" className="hover:text-[#1B1340] transition-colors">
               Sign in
             </Link>
             <Link
               href="/login"
-              className="px-4 py-2 rounded-lg bg-slate-950 text-white text-xs sm:text-sm font-semibold hover:bg-slate-800 transition-colors"
+              className="px-4 py-2 rounded-xl bg-[#6D4AFF] text-white text-xs sm:text-sm font-semibold hover:bg-[#5B38E8] transition-colors shadow-sm"
             >
               Start 14-day trial
             </Link>
@@ -41,16 +60,16 @@ export default function HomePage() {
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 lg:py-24">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFEAFF] border border-[#DDD3FF] text-teal-800 text-xs font-semibold">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EFEAFF] border border-[#DDD3FF] text-[#5B38E8] text-xs font-semibold">
                 <ShieldCheck className="w-3.5 h-3.5" />
                 Self-Serve B2B Client Onboarding &amp; Document Workflow Software
               </div>
 
-              <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-950 leading-[1.1]">
+              <h1 className="text-4xl sm:text-5xl font-bold tracking-[-0.025em] text-[#1B1340] leading-[1.1]">
                 Stop chasing client documents across WhatsApp and email threads.
               </h1>
 
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl">
+              <p className="text-base sm:text-lg text-[#4A4660] leading-relaxed max-w-xl">
                 Send your client one secure, no-login portal link. IntakeDock checks file
                 legibility automatically, sends polite follow-ups, and exports an organized ZIP or
                 PDF dossier in one click.
@@ -59,14 +78,14 @@ export default function HomePage() {
               <div className="flex flex-wrap items-center gap-3 pt-2">
                 <Link
                   href="/login"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-slate-950 text-white text-sm font-semibold hover:bg-slate-800 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-[#6D4AFF] text-white text-sm font-semibold hover:bg-[#5B38E8] transition-colors shadow-sm"
                 >
                   Start 14-day free trial
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
                   href="/pricing"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-[#EAE6F5] bg-white text-slate-900 text-sm font-semibold hover:bg-slate-50 transition-colors"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-[#EAE6F5] bg-white text-[#1B1340] text-sm font-semibold hover:bg-white/80 transition-colors"
                 >
                   View USD &amp; EUR pricing
                 </Link>

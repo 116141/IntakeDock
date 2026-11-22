@@ -111,7 +111,7 @@ export default function OnboardingPage() {
                   onClick={() => setCurrency(cur)}
                   className={`py-2.5 rounded-xl border text-sm font-semibold transition-colors ${
                     currency === cur
-                      ? 'border-slate-950 bg-slate-950 text-white'
+                      ? 'border-slate-950 bg-[#6D4AFF] text-white'
                       : 'border-[#EAE6F5] bg-white text-slate-700 hover:bg-slate-50'
                   }`}
                 >
@@ -130,7 +130,7 @@ export default function OnboardingPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 rounded-xl bg-slate-950 hover:bg-slate-800 text-white text-sm font-semibold transition-colors disabled:opacity-50"
+            className="w-full py-3 rounded-xl bg-slate-950 hover:bg-[#5B38E8] text-white text-sm font-semibold transition-colors disabled:opacity-50"
           >
             {loading ? 'Creating workspace...' : 'Launch 14-day free trial'}
           </button>

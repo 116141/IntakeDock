@@ -98,7 +98,7 @@ export function RequestDetailClient({
           type="button"
           onClick={() => handleExport('zip')}
           disabled={exporting !== null}
-          className="px-4 py-2 rounded-xl bg-slate-950 text-white text-xs font-semibold hover:bg-slate-800 inline-flex items-center gap-2 disabled:opacity-50"
+          className="px-4 py-2 rounded-xl bg-[#6D4AFF] text-white text-xs font-semibold hover:bg-[#5B38E8] inline-flex items-center gap-2 disabled:opacity-50"
         >
           <FolderArchive className="w-4 h-4" />
           {exporting === 'zip' ? 'Generating ZIP...' : 'Export ZIP Dossier'}

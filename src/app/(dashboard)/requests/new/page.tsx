@@ -112,7 +112,7 @@ export default function NewRequestPage() {
               setCopied(true);
               setTimeout(() => setCopied(false), 2000);
             }}
-            className="px-3 py-2 rounded-lg bg-slate-950 text-white text-xs font-semibold shrink-0 inline-flex items-center gap-1.5"
+            className="px-3 py-2 rounded-lg bg-[#6D4AFF] text-white text-xs font-semibold shrink-0 inline-flex items-center gap-1.5"
           >
             {copied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
             {copied ? 'Copied' : 'Copy'}
@@ -130,7 +130,7 @@ export default function NewRequestPage() {
           </a>
           <Link
             href={`/requests/${createdPortal.id}`}
-            className="px-4 py-2.5 rounded-xl bg-slate-950 text-white text-sm font-semibold hover:bg-slate-800 inline-flex items-center gap-1.5"
+            className="px-4 py-2.5 rounded-xl bg-[#6D4AFF] text-white text-sm font-semibold hover:bg-[#5B38E8] inline-flex items-center gap-1.5"
           >
             Open Request Dashboard
             <ArrowRight className="w-4 h-4" />
@@ -285,7 +285,7 @@ export default function NewRequestPage() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full py-3 rounded-xl bg-slate-950 text-white text-sm font-semibold hover:bg-slate-800 disabled:opacity-50"
+          className="w-full py-3 rounded-xl bg-[#6D4AFF] text-white text-sm font-semibold hover:bg-[#5B38E8] disabled:opacity-50"
         >
           {loading ? 'Generating secure portal link...' : 'Create Request & Generate Portal Link'}
         </button>

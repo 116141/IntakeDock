@@ -40,7 +40,7 @@ export default async function OverviewPage() {
         </div>
         <Link
           href="/requests/new"
-          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-950 text-white text-sm font-semibold hover:bg-slate-800 transition-colors"
+          className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#6D4AFF] text-white text-sm font-semibold hover:bg-[#5B38E8] transition-colors"
         >
           <Plus className="w-4 h-4" />
           New Client Request
@@ -61,7 +61,7 @@ export default async function OverviewPage() {
           </div>
           <Link
             href="/requests/new"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-950 text-white text-sm font-semibold hover:bg-slate-800"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#6D4AFF] text-white text-sm font-semibold hover:bg-[#5B38E8]"
           >
             Create first request
             <ArrowRight className="w-4 h-4" />

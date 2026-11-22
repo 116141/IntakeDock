@@ -184,7 +184,7 @@ export default function LoginPage() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 rounded-xl bg-slate-950 hover:bg-slate-800 text-white text-sm font-semibold transition-colors disabled:opacity-50"
+            className="w-full py-3 rounded-xl bg-slate-950 hover:bg-[#5B38E8] text-white text-sm font-semibold transition-colors disabled:opacity-50"
           >
             {loading
               ? 'Please wait...'

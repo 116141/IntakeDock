@@ -129,7 +129,7 @@ export function BillingClient({
           <button
             type="button"
             onClick={() => openCheckout('studio')}
-            className="w-full py-2.5 rounded-xl bg-slate-950 text-white text-sm font-semibold hover:bg-slate-800"
+            className="w-full py-2.5 rounded-xl bg-[#6D4AFF] text-white text-sm font-semibold hover:bg-[#5B38E8]"
           >
             Subscribe to Studio
           </button>

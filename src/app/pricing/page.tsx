@@ -12,7 +12,7 @@ export default function PricingPage() {
           </Link>
           <Link
             href="/login"
-            className="px-4 py-2 rounded-lg bg-slate-950 text-white text-xs font-semibold hover:bg-slate-800"
+            className="px-4 py-2 rounded-lg bg-[#6D4AFF] text-white text-xs font-semibold hover:bg-[#5B38E8]"
           >
             Start 14-day free trial
           </Link>
@@ -76,7 +76,7 @@ export default function PricingPage() {
           </div>
 
           <div className="rounded-2xl bg-white border-2 border-slate-950 p-8 flex flex-col justify-between space-y-6 relative">
-            <span className="absolute -top-3 right-6 px-3 py-0.5 rounded-full bg-slate-950 text-white text-xs font-semibold">
+            <span className="absolute -top-3 right-6 px-3 py-0.5 rounded-full bg-[#6D4AFF] text-white text-xs font-semibold">
               Recommended
             </span>
             <div className="space-y-4">
@@ -117,7 +117,7 @@ export default function PricingPage() {
             </div>
             <Link
               href="/login"
-              className="w-full py-3 rounded-xl bg-slate-950 text-white text-center text-sm font-semibold hover:bg-slate-800 transition-colors inline-flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-[#6D4AFF] text-white text-center text-sm font-semibold hover:bg-[#5B38E8] transition-colors inline-flex items-center justify-center gap-2"
             >
               Start Studio Trial
               <ArrowRight className="w-4 h-4" />
